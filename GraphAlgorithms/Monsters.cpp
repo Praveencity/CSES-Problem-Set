@@ -9,6 +9,7 @@ using namespace std;
 vector<pair<int,int>> cord = {{1,0},{-1,0},{0,1},{0,-1}};
 vector<char> direction = {'D','U','R','L'};
 
+// Using MultiSource bfs
 void solve() {
     int n,m;
     cin>>n>>m;
@@ -31,6 +32,7 @@ void solve() {
     vector<vector<int>> monster_time(n, vector<int> (m, LLONG_MAX));
     vector<vector<int>> vis(n, vector<int> (m));
     vector<vector<char>> path(n, vector<char> (m));
+    
     
     queue<pair<int,int>> mq;
     for(int i=0;i<n;i++)

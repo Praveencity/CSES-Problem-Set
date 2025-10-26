@@ -6,7 +6,7 @@ using namespace std;
 #define endl '\n'
 #define fast_io ios::sync_with_stdio(false); cin.tie(nullptr);
 
-
+// Using Dijkstra Algorithm
 void solve() {
     int n,m;
     cin>>n>>m;
